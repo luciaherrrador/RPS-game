@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- styles  -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--Opening page-->
+    <section id=constant >
+      <div class="header">
+        <img class="logo" src="images/logo.svg" alt="logo-image">
+        <span><div class="score">
+          <h3>SCORE</h3>
+          <h1 class="number">0</h1>
+        </div></span>
+      </div>
+      <div class="choose-btn">
+        <div class="buttons">
+          <img class="tringular" src="images/bg-triangle.svg" alt="triangular image">
+          <button class="blue icon"><img class="paper image" src="images/icon-paper.svg" alt="paper image"></button>
+          <button class="yellow icon"><img class="scissors image" src="images/icon-scissors.svg" alt="scissors image"></button>
+          <button class="red icon"><img class="rock image" src="images/icon-rock.svg" alt="rock image"></button>
+        </div>
+
+        <!--Playing Page-->
+        <div class="play-container">
+          <div class="player">
+            <h1 class="user">YOU PICKED</h1>
+            <button class="left yellow static icon"><img class="scissors image" src="images/icon-scissors.svg" alt="scissors image"></button>
+          </div>
+          <div class="computer">
+            <h1>THE HOUSE PICKED</h1>
+            <button class="empty static icon"></button>
+          </div>
+        </div>
+
+        <!--Result page-->
+        <div class="result-container">
+          <div class="player">
+            <h1>YOU PICKED</h1>
+            <button class="static yellow icon"><img class="scissors image" src="images/icon-scissors.svg" alt="scissors image"></button>
+          </div>
+          <div class="result">
+              <h1 class="declare">YOU WIN</h1>
+              <button class="again">PLAY AGAIN</button>
+          </div>
+          <div class="computer">
+            <h1>THE HOUSE PICKED</h1>
+            <button class="static red icon"><img class="rock image" src="images/icon-rock.svg" alt="rock image"></button>
+          </div>
+        </div>
+        
+        <button class="rule">RULES</button>
+      </div>
+      
+      
+    </section>
+    <div class="rule-container">
+          <img class="rule-img" src="images/image-rules.svg" alt="rule image">
+          <img class="cross" src="images/icon-close.svg" alt="cross image">
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="index.js" charset="utf-8"></script>
+  
+</body>
+</html>
